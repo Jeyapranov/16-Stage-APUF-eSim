@@ -1,0 +1,243 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_Nghdl
+LIBS:eSim_Ngveri
+LIBS:eSim_SKY130
+LIBS:eSim_SKY130_Subckts
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L mosfet_p M1
+U 1 1 697B473F
+P 5270 2350
+F 0 "M1" H 5220 2400 50  0000 R CNN
+F 1 "mosfet_p" H 5320 2500 50  0000 R CNN
+F 2 "" H 5520 2450 29  0000 C CNN
+F 3 "" H 5320 2350 60  0000 C CNN
+	1    5270 2350
+	1    0    0    1   
+$EndComp
+$Comp
+L mosfet_p M4
+U 1 1 697B479E
+P 6390 2345
+F 0 "M4" H 6340 2395 50  0000 R CNN
+F 1 "mosfet_p" H 6440 2495 50  0000 R CNN
+F 2 "" H 6640 2445 29  0000 C CNN
+F 3 "" H 6440 2345 60  0000 C CNN
+	1    6390 2345
+	-1   0    0    1   
+$EndComp
+$Comp
+L mosfet_n M2
+U 1 1 697B4821
+P 5650 2860
+F 0 "M2" H 5650 2710 50  0000 R CNN
+F 1 "mosfet_n" H 5750 2810 50  0000 R CNN
+F 2 "" H 5950 2560 29  0000 C CNN
+F 3 "" H 5750 2660 60  0000 C CNN
+	1    5650 2860
+	1    0    0    -1  
+$EndComp
+$Comp
+L mosfet_n M3
+U 1 1 697B485D
+P 5650 3380
+F 0 "M3" H 5650 3230 50  0000 R CNN
+F 1 "mosfet_n" H 5750 3330 50  0000 R CNN
+F 2 "" H 5950 3080 29  0000 C CNN
+F 3 "" H 5750 3180 60  0000 C CNN
+	1    5650 3380
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5420 2150 5420 1990
+Wire Wire Line
+	5420 1990 6240 1990
+Wire Wire Line
+	6240 1990 6240 2145
+Wire Wire Line
+	5420 2550 5420 2650
+Wire Wire Line
+	5420 2650 6240 2650
+Wire Wire Line
+	6240 2650 6240 2545
+Wire Wire Line
+	5850 2860 5850 2650
+Connection ~ 5850 2650
+Wire Wire Line
+	5850 3260 5850 3380
+Wire Wire Line
+	5850 3780 5850 3850
+Wire Wire Line
+	6140 2195 6140 2095
+Wire Wire Line
+	6140 2095 6240 2095
+Connection ~ 6240 2095
+Wire Wire Line
+	5520 2200 5520 2065
+Wire Wire Line
+	5520 2065 5420 2065
+Connection ~ 5420 2065
+Wire Wire Line
+	5095 3060 5550 3060
+Wire Wire Line
+	5550 3580 5425 3580
+$Comp
+L DC v1
+U 1 1 697B4D71
+P 5855 1540
+F 0 "v1" H 5655 1640 60  0000 C CNN
+F 1 "DC" H 5655 1490 60  0000 C CNN
+F 2 "R1" H 5555 1540 60  0000 C CNN
+F 3 "" H 5855 1540 60  0000 C CNN
+	1    5855 1540
+	-1   0    0    1   
+$EndComp
+Connection ~ 5855 1990
+$Comp
+L GND #PWR01
+U 1 1 697B4E3E
+P 5855 1090
+F 0 "#PWR01" H 5855 840 50  0001 C CNN
+F 1 "GND" H 5855 940 50  0000 C CNN
+F 2 "" H 5855 1090 50  0001 C CNN
+F 3 "" H 5855 1090 50  0001 C CNN
+	1    5855 1090
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 697B4F26
+P 5850 3850
+F 0 "#PWR02" H 5850 3600 50  0001 C CNN
+F 1 "GND" H 5850 3700 50  0000 C CNN
+F 2 "" H 5850 3850 50  0001 C CNN
+F 3 "" H 5850 3850 50  0001 C CNN
+	1    5850 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 697B4F7B
+P 5950 3730
+F 0 "#PWR03" H 5950 3480 50  0001 C CNN
+F 1 "GND" H 5950 3580 50  0000 C CNN
+F 2 "" H 5950 3730 50  0001 C CNN
+F 3 "" H 5950 3730 50  0001 C CNN
+	1    5950 3730
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 697B5011
+P 5950 3210
+F 0 "#PWR04" H 5950 2960 50  0001 C CNN
+F 1 "GND" H 5950 3060 50  0000 C CNN
+F 2 "" H 5950 3210 50  0001 C CNN
+F 3 "" H 5950 3210 50  0001 C CNN
+	1    5950 3210
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5120 2350 5070 2350
+Wire Wire Line
+	6540 2345 6680 2345
+$Comp
+L PORT U1
+U 1 1 697B52DF
+P 4820 2350
+F 0 "U1" H 4870 2450 30  0000 C CNN
+F 1 "PORT" H 4820 2350 30  0000 C CNN
+F 2 "" H 4820 2350 60  0000 C CNN
+F 3 "" H 4820 2350 60  0000 C CNN
+	1    4820 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PORT U1
+U 3 1 697B5352
+P 6930 2345
+F 0 "U1" H 6980 2445 30  0000 C CNN
+F 1 "PORT" H 6930 2345 30  0000 C CNN
+F 2 "" H 6930 2345 60  0000 C CNN
+F 3 "" H 6930 2345 60  0000 C CNN
+	3    6930 2345
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5095 2350 5095 3060
+Connection ~ 5095 2350
+Wire Wire Line
+	6605 2345 6605 3275
+Wire Wire Line
+	6605 3275 5425 3275
+Wire Wire Line
+	5425 3275 5425 3580
+Connection ~ 6605 2345
+$Comp
+L PORT U1
+U 2 1 697B594F
+P 6100 2775
+F 0 "U1" H 6150 2875 30  0000 C CNN
+F 1 "PORT" H 6100 2775 30  0000 C CNN
+F 2 "" H 6100 2775 60  0000 C CNN
+F 3 "" H 6100 2775 60  0000 C CNN
+	2    6100 2775
+	-1   0    0    1   
+$EndComp
+Connection ~ 5850 2775
+Text Label 5095 2350 0    60   ~ 0
+a
+Text Label 6605 2345 0    60   ~ 0
+b
+Text Label 5850 2775 2    60   ~ 0
+out
+$EndSCHEMATC

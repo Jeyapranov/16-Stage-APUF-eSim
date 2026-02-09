@@ -1,0 +1,101 @@
+# eSim / KiCad Project Ignore File
+
+# =====================
+# Backup Files
+# =====================
+*.bak
+*.bck
+*~
+\#*\#
+*.lck
+
+# =====================
+# Cache Files
+# =====================
+*-cache.lib
+*-cache.dcm
+*.cache
+fp-info-cache
+
+# =====================
+# Previous Values XML
+# =====================
+*_Previous_Values.xml
+
+# =====================
+# Output Files (Regeneratable)
+# =====================
+*.cir.out
+*.raw
+*.log
+b3v32check.log
+
+# =====================
+# KiCad Autosave
+# =====================
+*.sch-bak
+*.kicad_pcb-bak
+_autosave-*
+
+# =====================
+# Build/Output Directories
+# =====================
+/gerber/
+/output/
+/temp/
+
+# =====================
+# OS Generated Files
+# =====================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# =====================
+# IDE / Editor Files
+# =====================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# =====================
+# Python Cache (for eSim)
+# =====================
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.eggs/
+
+# =====================
+# Archive Files (large)
+# =====================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# =====================
+# Analysis Output (optional - keep if needed)
+# =====================
+# analysis
+
+# =====================
+# Temporary Files
+# =====================
+*.tmp
+*.temp
+
+# =====================
+# Original Unorganized Folders (keeping organized structure)
+# =====================
+/16_stage_apuf/
+/reports/

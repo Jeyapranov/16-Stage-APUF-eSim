@@ -1,0 +1,13 @@
+* Subcircuit buffer
+.subckt buffer /in /out 
+* c:\fossee_2.3\esim\library\subcircuitlibrary\buffer\buffer.cir
+.include PMOS-180nm.lib
+.include NMOS-180nm.lib
+m2 net-_m1-pad1_ /in net-_m2-pad3_ net-_m2-pad3_ CMOSP W=1.6u L=0.18u M=1
+m1 net-_m1-pad1_ /in gnd gnd CMOSN W=0.8u L=0.18u M=1
+m4 /out net-_m1-pad1_ net-_m2-pad3_ net-_m2-pad3_ CMOSP W=1.6u L=0.18u M=1
+m3 /out net-_m1-pad1_ gnd gnd CMOSN W=0.8u L=0.18u M=1
+v2 net-_m2-pad3_ gnd  dc 1.8
+* Control Statements
+
+.ends buffer

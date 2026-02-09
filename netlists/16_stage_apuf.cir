@@ -1,0 +1,120 @@
+* C:\esim2.3\16_stage_apuf\16_stage_apuf.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 1/31/2026 6:28:49 PM
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+v1  a GND pulse		
+v2  b GND pulse		
+U1  a plot_v1		
+U3  b plot_v1		
+v4  clg_0 GND pulse		
+U2  clg_0 plot_v1		
+x2  a b clg_0 clgb_0 Net-_x1-Pad1_ MUX2-1		
+U6  clg_0 plot_v1		
+U7  clgb_0 plot_v1		
+x3  b a clg_0 clgb_0 Net-_x3-Pad5_ MUX2-1		
+v3  clgb_0 GND pulse		
+U8  clgb_0 plot_v1		
+x1  Net-_x1-Pad1_ Net-_x1-Pad2_ buffer		
+x4  Net-_x3-Pad5_ Net-_x4-Pad2_ buffer		
+x5  Net-_x1-Pad2_ Net-_x4-Pad2_ clg_1 clgb_1 Net-_x5-Pad5_ MUX2-1		
+x7  Net-_x5-Pad5_ Net-_x10-Pad2_ buffer		
+x8  Net-_x6-Pad5_ Net-_x10-Pad1_ buffer		
+v5  clg_1 GND pulse		
+v6  clgb_1 GND pulse		
+x9  Net-_x10-Pad2_ Net-_x10-Pad1_ clg_2 clgb_2 Net-_x11-Pad1_ MUX2-1		
+x10  Net-_x10-Pad1_ Net-_x10-Pad2_ clg_2 clgb_2 Net-_x10-Pad5_ MUX2-1		
+x11  Net-_x11-Pad1_ Net-_x11-Pad2_ buffer		
+x12  Net-_x10-Pad5_ Net-_x12-Pad2_ buffer		
+x6  Net-_x4-Pad2_ Net-_x1-Pad2_ clg_1 clgb_1 Net-_x6-Pad5_ MUX2-1		
+v7  clg_2 GND pulse		
+v8  clgb_2 GND pulse		
+x13  Net-_x13-Pad1_ Net-_x13-Pad2_ clg_7 clgb_7 Net-_x13-Pad5_ MUX2-1		
+x14  Net-_x13-Pad2_ Net-_x13-Pad1_ clg_7 clgb_7 Net-_x14-Pad5_ MUX2-1		
+x16  Net-_x14-Pad5_ /cnt_b buffer		
+v9  clg_3 GND pulse		
+v10  clgb_3 GND pulse		
+x19  Net-_x11-Pad2_ Net-_x12-Pad2_ clg_3 clgb_3 Net-_x19-Pad5_ MUX2-1		
+x20  Net-_x12-Pad2_ Net-_x11-Pad2_ clg_3 clgb_3 Net-_x20-Pad5_ MUX2-1		
+x21  Net-_x19-Pad5_ Net-_x21-Pad2_ buffer		
+x22  Net-_x20-Pad5_ Net-_x22-Pad2_ buffer		
+v11  clg_4 GND pulse		
+v12  clgb_4 GND pulse		
+x23  Net-_x21-Pad2_ Net-_x22-Pad2_ clg_4 clgb_4 Net-_x23-Pad5_ MUX2-1		
+x24  Net-_x22-Pad2_ Net-_x21-Pad2_ clg_4 clgb_4 Net-_x24-Pad5_ MUX2-1		
+x25  Net-_x23-Pad5_ Net-_x25-Pad2_ buffer		
+v13  clg_5 GND pulse		
+v14  clgb_5 GND pulse		
+x27  Net-_x25-Pad2_ Net-_x24-Pad5_ clg_5 clgb_5 Net-_x27-Pad5_ MUX2-1		
+x28  Net-_x24-Pad5_ Net-_x25-Pad2_ clg_5 clgb_5 Net-_x28-Pad5_ MUX2-1		
+x29  Net-_x27-Pad5_ Net-_x29-Pad2_ buffer		
+x30  Net-_x28-Pad5_ Net-_x30-Pad2_ buffer		
+v15  clg_6 GND pulse		
+v16  clgb_6 GND pulse		
+x31  Net-_x29-Pad2_ Net-_x30-Pad2_ clg_6 clgb_6 Net-_x31-Pad5_ MUX2-1		
+x32  Net-_x30-Pad2_ Net-_x29-Pad2_ clg_6 clgb_6 Net-_x32-Pad5_ MUX2-1		
+x33  Net-_x31-Pad5_ Net-_x13-Pad1_ buffer		
+x34  Net-_x32-Pad5_ Net-_x13-Pad2_ buffer		
+v17  clg_7 GND pulse		
+v18  clgb_7 GND pulse		
+U67  out1 plot_v1		
+U68  out2 plot_v1		
+x63  out1 Net-_x63-Pad2_ Net-_x63-Pad3_ nand		
+x64  Net-_x63-Pad2_ Net-_x63-Pad3_ out2 nand		
+U69  out3 plot_v1		
+U70  out4 plot_v1		
+x15  Net-_x13-Pad5_ /cnt buffer		
+v19  clg_8 GND pulse		
+x17  /cnt /cnt_b clg_8 clgb_8 Net-_x17-Pad5_ MUX2-1		
+x18  /cnt_b /cnt clg_8 clgb_8 Net-_x18-Pad5_ MUX2-1		
+v20  clgb_8 GND pulse		
+x26  Net-_x17-Pad5_ Net-_x26-Pad2_ buffer		
+x35  Net-_x18-Pad5_ Net-_x35-Pad2_ buffer		
+x36  Net-_x26-Pad2_ Net-_x35-Pad2_ clg_9 clgb_9 Net-_x36-Pad5_ MUX2-1		
+x38  Net-_x36-Pad5_ Net-_x38-Pad2_ buffer		
+x39  Net-_x37-Pad5_ Net-_x39-Pad2_ buffer		
+v21  clg_9 GND pulse		
+v22  clgb_9 GND pulse		
+x40  Net-_x38-Pad2_ Net-_x39-Pad2_ clg_10 clgb_10 Net-_x40-Pad5_ MUX2-1		
+x41  Net-_x39-Pad2_ Net-_x38-Pad2_ clg_10 clgb_10 Net-_x41-Pad5_ MUX2-1		
+x42  Net-_x40-Pad5_ Net-_x42-Pad2_ buffer		
+x43  Net-_x41-Pad5_ Net-_x43-Pad2_ buffer		
+x37  Net-_x35-Pad2_ Net-_x26-Pad2_ clg_9 clgb_9 Net-_x37-Pad5_ MUX2-1		
+v23  clg_10 GND pulse		
+v24  clgb_10 GND pulse		
+x59  Net-_x57-Pad2_ Net-_x58-Pad2_ clg_15 clgb_15 Net-_x59-Pad5_ MUX2-1		
+x60  Net-_x58-Pad2_ Net-_x57-Pad2_ clg_15 clgb_15 Net-_x60-Pad5_ MUX2-1		
+x62  Net-_x60-Pad5_ out2 buffer		
+v25  clg_11 GND pulse		
+v26  clgb_11 GND pulse		
+x44  Net-_x42-Pad2_ Net-_x43-Pad2_ clg_11 clgb_11 Net-_x44-Pad5_ MUX2-1		
+x45  Net-_x43-Pad2_ Net-_x42-Pad2_ clg_11 clgb_11 Net-_x45-Pad5_ MUX2-1		
+x46  Net-_x44-Pad5_ Net-_x46-Pad2_ buffer		
+x47  Net-_x45-Pad5_ Net-_x47-Pad2_ buffer		
+v27  clg_12 GND pulse		
+v28  clgb_12 GND pulse		
+x48  Net-_x46-Pad2_ Net-_x47-Pad2_ clg_12 clgb_12 Net-_x48-Pad5_ MUX2-1		
+x49  Net-_x47-Pad2_ Net-_x46-Pad2_ clg_12 clgb_12 Net-_x49-Pad5_ MUX2-1		
+x50  Net-_x48-Pad5_ Net-_x50-Pad2_ buffer		
+v29  clg_13 GND pulse		
+v30  clgb_13 GND pulse		
+x51  Net-_x50-Pad2_ Net-_x49-Pad5_ clg_13 clgb_13 Net-_x51-Pad5_ MUX2-1		
+x52  Net-_x49-Pad5_ Net-_x50-Pad2_ clg_13 clgb_13 Net-_x52-Pad5_ MUX2-1		
+x53  Net-_x51-Pad5_ Net-_x53-Pad2_ buffer		
+x54  Net-_x52-Pad5_ Net-_x54-Pad2_ buffer		
+v31  clg_14 GND pulse		
+v32  clgb_14 GND pulse		
+x55  Net-_x53-Pad2_ Net-_x54-Pad2_ clg_14 clgb_14 Net-_x55-Pad5_ MUX2-1		
+x56  Net-_x54-Pad2_ Net-_x53-Pad2_ clg_14 clgb_14 Net-_x56-Pad5_ MUX2-1		
+x57  Net-_x55-Pad5_ Net-_x57-Pad2_ buffer		
+x58  Net-_x56-Pad5_ Net-_x58-Pad2_ buffer		
+v33  clg_15 GND pulse		
+v34  clgb_15 GND pulse		
+x61  Net-_x59-Pad5_ out1 buffer		
+x65  Net-_x63-Pad2_ out3 buffer		
+x66  Net-_x63-Pad3_ out4 buffer		
+
+.end
