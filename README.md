@@ -36,7 +36,7 @@ The APUF generates a unique response bit based on the race condition between two
                     Challenge Bits (C0-C15)
                            │
     ┌──────────────────────┼──────────────────────┐
-    │                      ▼                       │
+    │                      ▼                      │
     │   ┌─────┐   ┌─────┐   ┌─────┐        ┌─────┐│
 ────┼──►│MUX 0│──►│MUX 1│──►│MUX 2│──......│MUX15││
     │   │     │   │     │   │     │        │     ││
@@ -47,12 +47,12 @@ The APUF generates a unique response bit based on the race condition between two
     │   Buffer    Buffer    Buffer         Buffer │
     │      │         │         │              │   │
     │      └─────────┴─────────┴──────────────┘   │
-    │                      │                       │
+    │                      │                      │
     │               ┌──────┴──────┐               │
     │               │  SR Latch   │               │
     │               │(NAND-based) │               │
     │               └──────┬──────┘               │
-    │                      │                       │
+    │                      │                      │
     └──────────────────────┼──────────────────────┘
                            ▼
                     Response Bit (R)
@@ -177,8 +177,8 @@ The APUF generates a unique response bit based on the race condition between two
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/Jeyapranov/16-Stage-APUF---eSim.git
-   cd 16-Stage-APUF---eSim
+   git clone https://github.com/Jeyapranov/16-Stage-APUF-eSim.git
+   cd 16-Stage-APUF-eSim
    ```
 
 2. **Open in eSim**
